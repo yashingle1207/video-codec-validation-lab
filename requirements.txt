@@ -1,0 +1,7 @@
+matplotlib==3.8.0
+numpy==1.26.4
+packaging
+pandas
+pyyaml==6.0.1
+pytest==7.4.4
+pytest-timeout==2.2.0

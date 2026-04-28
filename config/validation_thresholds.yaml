@@ -1,0 +1,53 @@
+# Author: Yash Daniel Ingle
+# Email: yashingle1207@gmail.com
+# GitHub: github.com/yashingle1207
+# Project: Video Codec Validation Lab
+# File: validation_thresholds.yaml
+# Purpose: Define pass/fail thresholds for automated validation reports.
+#
+# Pass/fail thresholds for automated validation runs.
+# All metric comparisons use >= for min_ thresholds and <= for max_ thresholds.
+
+h264_crf18_352x288:
+  min_psnr_y: 42.0
+  min_vmaf: 93.0
+  max_encode_time_s: 15.0
+  max_file_size_mb: 8.0
+
+h264_crf23_352x288:
+  min_psnr_y: 36.0
+  min_vmaf: 85.0
+  max_encode_time_s: 10.0
+  max_file_size_mb: 5.0
+
+h264_crf45_352x288:
+  max_psnr_y: 38.0   # low quality - PSNR should be BELOW this
+  max_vmaf: 80.0
+
+hevc_crf24_352x288:
+  min_psnr_y: 38.0
+  min_vmaf: 88.0
+  max_encode_time_s: 30.0
+  max_file_size_mb: 4.0
+
+hevc_crf28_352x288:
+  min_psnr_y: 36.0
+  min_vmaf: 85.0
+  max_encode_time_s: 30.0
+  max_file_size_mb: 3.0
+
+hevc_cbr_800k_1280x720:
+  min_psnr_y: 34.0
+  min_vmaf: 75.0
+  max_encode_time_s: 120.0
+
+av1_crf30_352x288:
+  min_psnr_y: 37.0
+  min_vmaf: 87.0
+  max_encode_time_s: 300.0
+
+# Frame-level validation thresholds
+frame_validation:
+  max_black_frame_ratio: 0.02      # at most 2 % of frames may be black
+  max_frozen_frame_ratio: 0.01     # at most 1 % of frames may be frozen
+  allow_clipped_frames: false

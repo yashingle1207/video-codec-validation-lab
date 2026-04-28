@@ -1,0 +1,26 @@
+# Author: Yash Daniel Ingle
+# Email: yashingle1207@gmail.com
+# GitHub: github.com/yashingle1207
+# Project: Video Codec Validation Lab
+# File: av1_libaom_crf_sweep.yaml
+# Purpose: Configure AV1/libaom CRF sweep validation points.
+#
+# AV1 CRF sweep configuration (libaom-av1)
+# cpu-used is derived automatically from available CPU cores (capped at 8).
+
+codec: libaom-av1
+mode: crf
+gop: 30
+fps: 30.0
+
+crf_values: [25, 30, 35, 40, 48, 55]
+
+input:
+  width: 352
+  height: 288
+  yuv: data/raw_yuv/test_352x288_30fps_150f.yuv
+  frames: 150
+
+output:
+  dir: outputs/encoded/av1_crf_sweep
+  report: outputs/reports/av1_crf_sweep_results.json
