@@ -1,6 +1,10 @@
 
 # Video Codec Validation Lab
 
+**Author:** Yash Daniel Ingle  
+**Email:** yashingle1207@gmail.com  
+**GitHub:** github.com/yashingle1207  
+**Project:** Video Codec Validation Lab
 
 ## Overview
 
