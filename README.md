@@ -1,6 +1,4 @@
-Below is a clean **copy-paste ready `README.md`** with actual results, tables, and images from your run.
 
-````markdown
 # Video Codec Validation Lab
 
 Yash Daniel Ingle | yashingle1207@gmail.com | github.com/yashingle1207 | LinkedIn
@@ -432,5 +430,3 @@ That was the main reason I built the project this way.
 
 MIT License - Yash Daniel Ingle
 
-```
-```
