@@ -1,0 +1,58 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# C++ build artifacts
+*.o
+*.exe
+*.out
+frame_validator
+build/
+
+# Generated outputs
+*.mp4
+*.mkv
+*.ivf
+*.webm
+*.yuv
+outputs/encoded/*
+outputs/decoded/*
+outputs/metrics/*
+outputs/plots/*
+outputs/reports/*
+!outputs/encoded/.gitkeep
+!outputs/decoded/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/plots/.gitkeep
+!outputs/reports/.gitkeep
+
+# Raw YUV sequences
+data/raw_yuv/*.yuv
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+*.swp
+*.swo
+
+# Logs
+*.log
+outputsmetrics*
+
+# Keep placeholder directories
+!docs/images/.gitkeep
+!outputs/**/.gitkeep
+!data/raw_yuv/README.md
+
+

@@ -1,0 +1,26 @@
+# Author: Yash Daniel Ingle
+# Email: yashingle1207@gmail.com
+# GitHub: github.com/yashingle1207
+# Project: Video Codec Validation Lab
+# File: h265_hevc_cbr_ladder.yaml
+# Purpose: Configure HEVC/H.265 CBR ladder validation points.
+#
+# HEVC CBR bitrate ladder for adaptive streaming evaluation
+
+codec: libx265
+mode: cbr
+preset: medium
+gop: 60
+fps: 30.0
+
+bitrate_ladder_kbps: [200, 400, 800, 1500, 3000, 6000]
+
+input:
+  width: 1280
+  height: 720
+  yuv: data/raw_yuv/test_1280x720_30fps_150f.yuv
+  frames: 150
+
+output:
+  dir: outputs/encoded/hevc_cbr_ladder
+  report: outputs/reports/hevc_cbr_ladder_results.json

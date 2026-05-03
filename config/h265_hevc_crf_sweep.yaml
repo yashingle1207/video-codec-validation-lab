@@ -1,0 +1,26 @@
+# Author: Yash Daniel Ingle
+# Email: yashingle1207@gmail.com
+# GitHub: github.com/yashingle1207
+# Project: Video Codec Validation Lab
+# File: h265_hevc_crf_sweep.yaml
+# Purpose: Configure HEVC/H.265 CRF sweep validation points.
+#
+# HEVC (H.265) CRF sweep configuration
+
+codec: libx265
+mode: crf
+preset: medium
+gop: 30
+fps: 30.0
+
+crf_values: [20, 24, 28, 32, 36, 42]
+
+input:
+  width: 352
+  height: 288
+  yuv: data/raw_yuv/test_352x288_30fps_150f.yuv
+  frames: 150
+
+output:
+  dir: outputs/encoded/hevc_crf_sweep
+  report: outputs/reports/hevc_crf_sweep_results.json
